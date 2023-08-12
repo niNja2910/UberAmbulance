@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/widgets/drawer.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -13,12 +14,7 @@ class Homepage extends StatelessWidget {
       body: Center(
         child: Container(child: Text("Welcome to $owner World...")),
       ),
-      drawer: Drawer(
-          child: Container(
-              child: Text(
-        "Hello to the corner...",
-        style: TextStyle(color: Colors.orange.shade300),
-      ))),
+      drawer: MyDrawer(),
     );
   }
 }

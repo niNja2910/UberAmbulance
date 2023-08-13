@@ -5,14 +5,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Ambulance Contacts'),
+        title: Text('Hospital Contacts'),
       ),
-      body: ContactList(),
+      body: HospitalPage(),
     );
   }
 }
 
-class ContactList extends StatelessWidget {
+class HospitalPage extends StatelessWidget {
   final List<Contact> contacts = [
     Contact(name: 'John Doe', phoneNumber: '123-456-7890'),
     Contact(name: 'Jane Smith', phoneNumber: '987-654-3210'),

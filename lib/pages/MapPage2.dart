@@ -3,22 +3,19 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/AmbulancePage.dart';
+import 'package:flutter_application_1/pages/HospitalPage.dart';
 import 'package:flutter_application_1/utils/routes.dart';
-
-void main() {
-  runApp(MyApp());
-}
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MapPage(),
+      home: MapPage2(),
     );
   }
 }
 
-class MapPage extends StatelessWidget {
+class MapPage2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +37,7 @@ class MapPage extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => AmbulancePage(),
+                      builder: (context) => HospitalPage(),
                     ));
                 // TODO: Fetch current location
               },

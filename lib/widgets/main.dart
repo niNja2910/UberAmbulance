@@ -1,9 +1,10 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/MCQScreen.dart';
+import 'package:flutter_application_1/pages/HospitalPage.dart';
 import 'package:flutter_application_1/pages/MapPage.dart';
 import 'package:flutter_application_1/pages/AmbulancePage.dart';
+import 'package:flutter_application_1/pages/MapPage2.dart';
 import 'package:flutter_application_1/pages/sign_up.dart';
 import 'package:flutter_application_1/utils/routes.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -29,13 +30,14 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: "/",
       routes: {
-        "/": (context) => MCQScreen(),
+        "/": (context) => Homepage(),
         MyRoutes.homeRoute: (context) => Homepage(),
         MyRoutes.loginRoute: (context) => LoginPage(),
         MyRoutes.signupRoute: (context) => SignUp(),
-        MyRoutes.MainRoute: (context) => MapPage(),
-        MyRoutes.MainRoute: (context) => AmbulancePage(),
-        MyRoutes.MainRoute: (context) => MCQScreen(),
+        MyRoutes.map1route: (context) => MapPage(),
+        MyRoutes.ambulanceRoute: (context) => AmbulancePage(),
+        MyRoutes.map2Route: (context) => MapPage2(),
+        MyRoutes.hospitalRoute: (context) => HospitalPage(),
       },
     );
   }

@@ -1,10 +1,7 @@
-// ignore: file_names
-// ignore_for_file: file_names
+// ignore_for_file: file_names, use_key_in_widget_constructors, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/AmbulancePage.dart';
 import 'package:flutter_application_1/pages/HospitalPage.dart';
-import 'package:flutter_application_1/utils/routes.dart';
 
 class MyApp extends StatelessWidget {
   @override
@@ -26,10 +23,12 @@ class MapPage2 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              'assets/images/GoogleMap.png', // Replace with your map image asset
-              width: 300,
-              height: 200,
+            SingleChildScrollView(
+              child: Image.asset(
+                'assets/images/GoogleMap.png', // Replace with your map image asset
+                width: 400,
+                height: 300,
+              ),
             ),
             SizedBox(height: 20),
             ElevatedButton(
@@ -39,9 +38,8 @@ class MapPage2 extends StatelessWidget {
                     MaterialPageRoute(
                       builder: (context) => HospitalPage(),
                     ));
-                // TODO: Fetch current location
               },
-              child: Text('Fetch Current Location'),
+              child: Text('Fetch Hospitals Nearby'),
             ),
           ],
         ),

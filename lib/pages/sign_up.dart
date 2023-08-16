@@ -104,7 +104,10 @@ class _SignUpState extends State<SignUp> {
                         padding: const EdgeInsets.all(15.0),
                         child: Material(
                           child: InkWell(
-                            onTap: () => moveTohome(context),
+                            onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: ((context) => LoginPage()))),
                             child: AnimatedContainer(
                                 duration: Duration(seconds: 1),
                                 width: changebutton ? 50 : 100,

@@ -14,8 +14,16 @@ class MyApp extends StatelessWidget {
 
 class HospitalPage extends StatelessWidget {
   final List<Contact> contacts = [
-    Contact(name: 'John Doe', phoneNumber: '123-456-7890'),
-    Contact(name: 'Jane Smith', phoneNumber: '987-654-3210'),
+    Contact(name: 'Hospital 1', phoneNumber: '123-456-7890'),
+    Contact(name: 'Hospital 2', phoneNumber: '987-654-3210'),
+    Contact(name: 'Hospital 3', phoneNumber: '987-654-3211'),
+    Contact(name: 'Hospital 4', phoneNumber: '987-654-3212'),
+    Contact(name: 'Hospital 5', phoneNumber: '987-654-3213'),
+    Contact(name: 'Hospital 6', phoneNumber: '987-654-3214'),
+    Contact(name: 'Hospital 7', phoneNumber: '987-654-3215'),
+    Contact(name: 'Hospital 8', phoneNumber: '987-654-3216'),
+    Contact(name: 'Hospital 9', phoneNumber: '987-654-3217'),
+    Contact(name: 'Hospital 10', phoneNumber: '987-654-3218'),
     // Add more contacts here
   ];
 

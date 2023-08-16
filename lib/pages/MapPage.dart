@@ -3,11 +3,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/AmbulancePage.dart';
+import 'package:flutter_application_1/pages/HospitalPage.dart';
 import 'package:flutter_application_1/utils/routes.dart';
-
-void main() {
-  runApp(MyApp());
-}
 
 class MyApp extends StatelessWidget {
   @override
@@ -23,7 +20,7 @@ class MapPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Map Page'),
+        title: Text('Ambulances Nearby'),
       ),
       body: Center(
         child: Column(
@@ -31,8 +28,8 @@ class MapPage extends StatelessWidget {
           children: [
             Image.asset(
               'assets/images/GoogleMap.png', // Replace with your map image asset
-              width: 300,
-              height: 200,
+              width: 500,
+              height: 500,
             ),
             SizedBox(height: 20),
             ElevatedButton(
@@ -40,11 +37,11 @@ class MapPage extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => AmbulancePage(),
+                      builder: (context) => ContactList(),
                     ));
                 // TODO: Fetch current location
               },
-              child: Text('Fetch Current Location'),
+              child: Text('Fetch Ambulances Nearby'),
             ),
           ],
         ),

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1030473154812",
+    "project_id": "uberambulance-35128",
+    "storage_bucket": "uberambulance-35128.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030473154812:android:59dc3f351129fcb1795779",
+        "android_client_info": {
+          "package_name": "com.google.flutter_uber_ambulance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1030473154812-l101dbt6oudrvivmdeohklt7v4ep2ip3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlAsqmVT_xmubUC08Q1a2lOQqRBEI8V0c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1030473154812-l101dbt6oudrvivmdeohklt7v4ep2ip3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
